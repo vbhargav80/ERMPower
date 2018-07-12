@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERMPower.App", "ERMPower.App\ERMPower.App.csproj", "{72C183BA-321A-4D5C-B01D-1F8620A960D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERMPower.BusinessLogic", "ERMPower.BusinessLogic\ERMPower.BusinessLogic.csproj", "{8AB3FD62-37A2-49A3-AF8A-F52D08FA894B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERMPower.Data", "ERMPower.Data\ERMPower.Data.csproj", "{C0B12856-3CFC-412B-B6A7-25101AA84B83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{72C183BA-321A-4D5C-B01D-1F8620A960D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72C183BA-321A-4D5C-B01D-1F8620A960D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72C183BA-321A-4D5C-B01D-1F8620A960D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AB3FD62-37A2-49A3-AF8A-F52D08FA894B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB3FD62-37A2-49A3-AF8A-F52D08FA894B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AB3FD62-37A2-49A3-AF8A-F52D08FA894B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AB3FD62-37A2-49A3-AF8A-F52D08FA894B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0B12856-3CFC-412B-B6A7-25101AA84B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0B12856-3CFC-412B-B6A7-25101AA84B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0B12856-3CFC-412B-B6A7-25101AA84B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0B12856-3CFC-412B-B6A7-25101AA84B83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

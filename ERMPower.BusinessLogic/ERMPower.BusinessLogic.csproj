@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{72C183BA-321A-4D5C-B01D-1F8620A960D0}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ERMPower.App</RootNamespace>
-    <AssemblyName>ERMPower.App</AssemblyName>
+    <ProjectGuid>{8AB3FD62-37A2-49A3-AF8A-F52D08FA894B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERMPower.BusinessLogic</RootNamespace>
+    <AssemblyName>ERMPower.BusinessLogic</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,21 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Models\LPRecord.cs" />
+    <Compile Include="Models\TOURecord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ERMPower.BusinessLogic\ERMPower.BusinessLogic.csproj">
-      <Project>{8ab3fd62-37a2-49a3-af8a-f52d08fa894b}</Project>
-      <Name>ERMPower.BusinessLogic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ERMPower.Data\ERMPower.Data.csproj">
-      <Project>{c0b12856-3cfc-412b-b6a7-25101aa84b83}</Project>
-      <Name>ERMPower.Data</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
