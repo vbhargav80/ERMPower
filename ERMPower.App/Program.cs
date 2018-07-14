@@ -1,4 +1,6 @@
-﻿using ERMPower.BusinessLogic;
+﻿using System;
+using Autofac;
+using ERMPower.BusinessLogic;
 using ERMPower.Data;
 
 namespace ERMPower.App
@@ -7,10 +9,12 @@ namespace ERMPower.App
     {
         private static void Main(string[] args)
         {
-            var repo = new FileRepository();
-            var medianService = new MedianService(repo);
-
-            medianService.PrintRecordsHavingVariance();
+            var container = ContainerConfig.Configure();
+            using (var scope = container.BeginLifetimeScope())
+            {
+                var app = scope.Resolve<IApplication>();
+                app.Run();
+            }
         }
     }
 }

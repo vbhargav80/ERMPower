@@ -3,7 +3,7 @@ using ERMPower.BusinessLogic.Models;
 
 namespace ERMPower.Data
 {
-    public class LPRecordMap : CsvClassMap<LPRecord>
+    public sealed class LPRecordMap : CsvClassMap<LPRecord>
     {
         public LPRecordMap()
         {

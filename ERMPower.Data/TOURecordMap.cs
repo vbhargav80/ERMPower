@@ -3,7 +3,7 @@ using ERMPower.BusinessLogic.Models;
 
 namespace ERMPower.Data
 {
-    public class TOURecordMap : CsvClassMap<TOURecord>
+    public sealed class TOURecordMap : CsvClassMap<TOURecord>
     {
         public TOURecordMap()
         {
